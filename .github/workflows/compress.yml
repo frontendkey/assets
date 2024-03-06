@@ -1,6 +1,8 @@
 name: Compress Image
 
 on:
+  watch:
+    types: started
   pull_request:
 
     paths:
