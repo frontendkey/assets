@@ -11,5 +11,5 @@ cd $(pwd)
 shopt -s nullglob nocaseglob extglob
 
 for FILE in *.@(jpg|jpeg|tif|tiff|png); do 
-    cwebp $PARAMS "$FILE" -q "75" -o "${FILE%.*}".webp;
+    cwebp $PARAMS "$FILE" -q "75" -o ./webp/"${FILE%.*}".webp;
 done
